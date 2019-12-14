@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SinglePhoto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello 🌍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIM-Hr-g5p">
+                                <rect key="frame" x="139" y="318" width="96" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen Shot 2019-12-14 at 5.45.29 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Hqn-Ss-fSM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello 🌍 !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toa-Cv-zPi">
+                                <rect key="frame" x="111" y="310" width="153" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.68393542380000005" green="1" blue="0.84811999189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68393542380468064" green="1" blue="0.84811999188219223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MIM-Hr-g5p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="318" id="Dg6-gh-ei1"/>
+                            <constraint firstItem="toa-Cv-zPi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="G8D-7Y-2Mp"/>
+                            <constraint firstItem="MIM-Hr-g5p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="HEu-LB-p8O"/>
+                            <constraint firstItem="toa-Cv-zPi" firstAttribute="centerY" secondItem="MIM-Hr-g5p" secondAttribute="centerY" id="MjO-7R-twh"/>
+                            <constraint firstItem="toa-Cv-zPi" firstAttribute="centerX" secondItem="MIM-Hr-g5p" secondAttribute="centerX" id="Q2C-fE-xri"/>
+                            <constraint firstItem="toa-Cv-zPi" firstAttribute="centerY" secondItem="Hqn-Ss-fSM" secondAttribute="centerY" id="S55-55-ynm"/>
+                            <constraint firstItem="toa-Cv-zPi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iU9-v1-5g9"/>
+                            <constraint firstItem="toa-Cv-zPi" firstAttribute="centerX" secondItem="Hqn-Ss-fSM" secondAttribute="centerX" id="kB1-Yb-wmB"/>
+                            <constraint firstItem="toa-Cv-zPi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="p3T-5v-7NE"/>
+                            <constraint firstItem="toa-Cv-zPi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="310" id="svk-5X-rP2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen Shot 2019-12-14 at 5.45.29 PM" width="429" height="810"/>
+    </resources>
+</document>
