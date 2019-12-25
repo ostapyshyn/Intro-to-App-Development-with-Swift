@@ -13,6 +13,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var leftWinScore: UILabel!
+    
+    @IBOutlet weak var rightLoseSCore: UILabel!
+    
+    
     @IBOutlet weak var topSign: UILabel!
     
     @IBOutlet weak var status: UILabel!
@@ -84,9 +90,14 @@ class ViewController: UIViewController {
         
     }
     
+    var win = 0
+    var lose = 0
+    
     
     
     func updateView(option: GameState) {
+        
+        
         
         switch option {
         case .start:
@@ -110,9 +121,13 @@ class ViewController: UIViewController {
             self.view.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
             status.text = "Draw!"
         case .win:
+            win += 1
+            leftWinScore.text = "\(win)"
             self.view.backgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
             status.text = "You Won!"
         case .lose:
+            lose += 1
+            rightLoseSCore.text = "\(lose)"
             self.view.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
             status.text = "You Lose!"
             
